@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Tutoring Marketplace</title>
+</head>
+<body>
+
+    <header>
+        <h1>Peer Tutoring Marketplace</h1>
+        <p>Learn together, grow together.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="#tutors">Find a Tutor</a>
+            <a href="#booking">Book a Session</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tutors">
+            <h2>Meet Our Tutors</h2>
+
+            <article>
+                <h3>Arjun Kumar</h3>
+                <p>HTML and CSS tutor with 2 years of experience.</p>
+
+                <h4>Sample Tutor Introduction Video</h4>
+                <video controls width="480">
+                    <source src="tutor-intro.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </article>
+
+            <article>
+                <h3>Priya Sharma</h3>
+                <p>Python programming tutor with 1 year of experience.</p>
+            </article>
+
+            <article>
+                <h3>Rahul Verma</h3>
+                <p>Mathematics tutor with 3 years of experience.</p>
+            </article>
+        </section>
+
+        <section id="booking">
+            <h2>Book a Tutoring Session</h2>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="student-name">Your Name:</label>
+                    <input type="text" id="student-name"
+                           name="student-name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email"
+                           name="email" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="subject">Choose a Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="html-css">HTML and CSS</option>
+                        <option value="python">Python Programming</option>
+                        <option value="mathematics">Mathematics</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="session-date">Preferred Date:</label>
+                    <input type="date" id="session-date"
+                           name="session-date" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="message">Additional Details:</label>
+                    <textarea id="message" name="message"
+                              rows="4" cols="30"></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Request a Session</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Peer Tutoring Marketplace. All rights reserved.</p>
+        <p>Contact: tutoring@example.com</p>
+    </footer>
+
+</body>
+</html>
