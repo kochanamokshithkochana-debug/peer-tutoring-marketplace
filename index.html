@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Tutoring Marketplace</title>
+</head>
+<body>
+
+    <header>
+        <h1>Peer Tutoring Marketplace</h1>
+        <p>Learn together, grow together.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="#tutors">Find a Tutor</a>
+            <a href="#booking">Book a Session</a>
+            <a href="become-a-tutor.html">Become a Tutor</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tutors">
+            <h2>Meet Our Tutors</h2>
+            <p>Connect with fellow students who can help you succeed.</p>
+
+            <article>
+                <h3>Arjun Kumar</h3>
+                <p><strong>Subject:</strong> HTML and CSS</p>
+                <p><strong>Experience:</strong> 2 years</p>
+                <p><strong>Rate:</strong> ₹200 per hour</p>
+            </article>
+
+            <article>
+                <h3>Priya Sharma</h3>
+                <p><strong>Subject:</strong> Python Programming</p>
+                <p><strong>Experience:</strong> 1 year</p>
+                <p><strong>Rate:</strong> ₹250 per hour</p>
+            </article>
+
+            <article>
+                <h3>Rahul Verma</h3>
+                <p><strong>Subject:</strong> Mathematics</p>
+                <p><strong>Experience:</strong> 3 years</p>
+                <p><strong>Rate:</strong> ₹300 per hour</p>
+            </article>
+        </section>
+
+        <section id="booking">
+            <h2>Book a Tutoring Session</h2>
+            <p>Fill out the form to request a session with a tutor.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="student-name">Your Name:</label>
+                    <input
+                        type="text"
+                        id="student-name"
+                        name="student-name"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="subject">Choose a Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="html-css">HTML and CSS</option>
+                        <option value="python">Python Programming</option>
+                        <option value="mathematics">Mathematics</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="session-date">Preferred Date:</label>
+                    <input
+                        type="date"
+                        id="session-date"
+                        name="session-date"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="message">Additional Details:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        cols="30"
+                        placeholder="Tell us what you need help with."
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Request a Session</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Peer Tutoring Marketplace. All rights reserved.</p>
+        <p>Contact us: tutoring@example.com</p>
+    </footer>
+
+</body>
+</html>
